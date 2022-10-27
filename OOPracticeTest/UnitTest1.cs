@@ -6,10 +6,25 @@ namespace OOPracticeTest
     public class UnitTest1
     {
         [Fact]
-        public void Test1()
+        public void Should_return_message_when_speed_and_carname()
         {
-            var class1 = new Class1();
-            Assert.NotNull(class1);
+            //given
+            Car car = new Car("Cool Car", 30);
+            //when
+            string message = car.SpeedUp();
+            //then
+            Assert.Equal("Cool Car: speed up to 30 km/h", message);
+        }
+
+        [Fact]
+        public void Should_return_message_when_speed_and_truckname()
+        {
+            //given
+            Truck truck = new Truck("Big Truck", 10);
+            //when
+            string message = truck.SpeedUp();
+            //then
+            Assert.Equal("Big Truck: speed up to 10 km/h", message);
         }
     }
 }
