@@ -2,20 +2,10 @@
 
 namespace OOPractice
 {
-    public class Car
+    public class Car : Vehicle
     {
-        public Car(string name, int speed)
+        public Car(string name, string type) : base(name, type)
         {
-            Name = name;
-            Speed = speed;
-        }
-
-        public string Name { get; }
-        public int Speed { get; }
-
-        public string SpeedUp()
-        {
-            return Name + ": speed up to " + Speed + " km/h";
         }
     }
 }

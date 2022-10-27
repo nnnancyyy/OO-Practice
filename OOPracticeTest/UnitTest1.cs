@@ -9,7 +9,7 @@ namespace OOPracticeTest
         public void Should_return_message_when_speed_and_carname()
         {
             //given
-            Car car = new Car("Cool Car", 30);
+            Car car = new Car("Cool Car", "oil");
             //when
             string message = car.SpeedUp();
             //then
@@ -20,7 +20,7 @@ namespace OOPracticeTest
         public void Should_return_message_when_speed_and_truckname()
         {
             //given
-            Truck truck = new Truck("Big Truck", 10);
+            Truck truck = new Truck("Big Truck", "ev");
             //when
             string message = truck.SpeedUp();
             //then
